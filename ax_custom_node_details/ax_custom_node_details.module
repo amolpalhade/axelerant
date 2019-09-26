@@ -23,35 +23,3 @@ function ax_custom_node_details_help($route_name, RouteMatchInterface $route_mat
     default:
   }
 }
-
-/**
- * Implements hook_form_alter().
- */
-/*function ax_custom_node_details_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
-  if($form_id == "system_site_information_settings"){
-    $form['site_information']['siteapikey'] = array(
-      '#type' => 'textfield',
-      '#title' => t("Site API Key"),
-      '#description' => 'Enter the Site API Key',
-      //'#default_value' => isset($form_state['values']['siteapikey']) ? $form_state['values']['siteapikey']: 'No API Key yet',
-      //'#default_value' => 'No API Key yet',
-      '#value' => $form_state->getValue('siteapikey'),
-    );
-
-    $form['actions']['submit']['#submit'][] = 'ax_custom_node_details_submit';
-
-  }
-
-
-  function ax_custom_node_details_submit(array $form, FormStateInterface $form_state){
-    //die("I'm not getting run, why :(");
-    //$entity = $form_state->getFormObject()->getEntity();
-    //$entity->set("siteapikey","ABCD");
-    //$entity->save();
-    \Drupal::configFactory()->getEditable('system.site')
-     ->set('siteapikey', "ABCDE")
-     ->save();
-    drupal_set_message("Why won't this message show?");
-
-}
-}*/

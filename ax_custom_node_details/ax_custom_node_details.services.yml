@@ -1,0 +1,6 @@
+# Registering Event Subscriber
+services:
+  ax_custom_node_details.add_siteapi_subscriber:
+    class: Drupal\ax_custom_node_details\Routing\AddSiteApiSubscriber
+    tags:
+      - { name: event_subscriber }

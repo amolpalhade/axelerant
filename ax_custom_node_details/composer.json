@@ -1,0 +1,13 @@
+{
+    "name": "ax_custom_node_details",
+    "type": "drupal-module",
+    "description": "This module is used for fetching the node details depend on the Site API key",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/ax_custom_node_details",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/ax_custom_node_details",
+        "source": "http://cgit.drupalcode.org/ax_custom_node_details",
+    },
+}

@@ -16,7 +16,7 @@ class AddSiteApiForm extends SiteInformationForm {
     // fetching the config details of the site information form
 		$site_config = $this->config('system.site');
 		$form =  parent::buildForm($form, $form_state);
-    // Adding the text field for SiteAPI key
+    // Adding the text field for SiteAPI key in the form
 		$form['site_information']['siteapikey'] = [
 			'#type' => 'textfield',
 			'#title' => t('Site API Key'),

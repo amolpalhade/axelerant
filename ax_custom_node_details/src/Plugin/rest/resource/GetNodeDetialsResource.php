@@ -13,7 +13,7 @@ use Drupal\ax_custom_node_details\Controller\AxCustomNodeDetailsController;
  *   id = "get_node_details",
  *   label = @Translation("Node Details"),
  *   uri_paths = {
- *     "canonical" = "/page_json/{site_api}/{nid}"
+ *     "canonical" = "/page_json/{requested_site_api}/{requested_nid}"
  *   }
  * )
  */
@@ -23,8 +23,9 @@ class GetNodeDetialsResource extends ResourceBase {
   * Responds to entity GET requests.
   * @return \Drupal\rest\ResourceResponse
   */
- public function get($site_api,$nid) {
-   $jsonresponse = AxCustomNodeDetailsController::nodeDetailAPI($site_api,$nid);
+ public function get($requested_site_api,$requested_nid) {
+   // Calling the nodeDetailAPI function
+   $jsonresponse = AxCustomNodeDetailsController::nodeDetailAPI($requested_site_api,$requested_nid);
    return new ResourceResponse($jsonresponse);
  }
 }

@@ -2,4 +2,5 @@ name: 'AX Custom Node Details'
 type: module
 description: 'This module is used for fetching the node details depend on the Site API key'
 core: 8.x
+version: 8.x-0.04
 package: 'Custom'
